@@ -7,7 +7,6 @@
 }
 
 :root {
-  /* colors */
   --yellow: hsl(47, 88%, 63%);
   --gray-950: hsl(0, 0%, 7%);
   --gray-500: hsl(0, 0%, 42%);
@@ -51,6 +50,15 @@ article {
   padding: var(--spacing-300);
   border: 2px solid var(--gray-950);
   box-shadow: var(--gray-950) 10px 10px;
+  transition: all 0.5s ease-out;
+}
+
+article:hover {
+  h1 {
+    color: var(--yellow);
+  }
+
+  box-shadow: var(--gray-950) 15px 15px;
 }
 
 .rights {
@@ -68,6 +76,7 @@ h1 {
   font-size: 24px;
   margin-bottom: var(--spacing-150);
   color: var;
+  transition: all 0.5s ease-out;
 }
 
 .description {
